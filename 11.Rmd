@@ -1,0 +1,19 @@
+---
+title: "exercise1 Ozone~Wind Linear Regression"
+output: html_document
+---
+
+
+## linear regression
+## Including plot, linear regression, summary, plot and residual analysis
+
+
+```{r airquality}
+plot(airquality)
+lm<-lm(airquality$Ozone ~ airquality$Wind)
+summary(lm)
+plot(airquality$Wind, airquality$Ozone)
+plot(lm)
+
+
+```
